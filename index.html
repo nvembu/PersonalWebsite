@@ -14,16 +14,81 @@ img {
   	margin-left: auto;
   	margin-right: auto;
   	width: 50%;
+  	padding:1px;
+  	border:3px solid #021a40;
 }
+body {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("background.jpg");
+}
+
+h2 {text-align:center;}
+p {text-align:center;}
+
+.boxed {
+  border: 1px solid green ;
+}
+
 </style>
 </head>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="#"><i class="fa fa-fw fa-search"></i> Resume </a> 
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Experience </a> 
+  <a href="#"><i class="fa fa-fw fa-user"></i> Hobbies </a>
+  <a href="#"><i class="fa fa-fw fa-user"></i> Gallery </a>
+</div>
+
+</body>
+</html> 
 <body>
 
     <h2> Welcome to my personal website WOOOO </h2>
-    <p style="background-image:url('background.jpg');" width="800", height="1000">
-    <img src="website_profilepic.JPG" alt="picture of Nikhila Vembu"  width="400" height="300">
 
-    <p> it me </p>
+
+    <img src="website_profilepic.JPG" alt="picture of Nikhila Vembu" style="width:28%" width="400" height="300">
+
+    <p> Hi, my name is Nikhila and I'm a Second-Year Mechanical and Biomedical Engineering student at Carnegie Mellon! I'm really passionate about all things medical devices, especially understanding the entire process of creating them. I have experience with device design and testing from researching in my college's biophotonics lab, and am currently learning about biomedical data analysis and basic machine learning from interning at a startup in Pittsburgh. <br><br>
+    I am involved in my school's Society of Women Engineers, Biomedical Engineering Society, and Engineering Student Council. Aside from math-y and sciency clubs and activities, I am music director of CMU's all female-idenifying A Cappella group, called Counterpoint. In my free time, I like to arrange music for my a cappella group, go on runs, travel, pet dogs, and post on my food-review instagram!</p>
+
+   <!-- <div class="boxed">
+  		This text is enclosed in a box.
+	</div> -->
 
    <!--	// <a href =  'https....' > Student Website </a> -->
     <script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
@@ -31,3 +96,4 @@ img {
 
 
 </body></html>
+
